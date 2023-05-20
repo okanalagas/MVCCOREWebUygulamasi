@@ -1,0 +1,14 @@
+﻿@model Category
+
+<form method="post" asp-action="UpdateCategory">
+    <input type="hidden" asp-for="Id" />  @*Hangi kategoriyi güncelleyerceğimizi bilmek için hidden ile id göndeririz.*@
+    <div>
+        <input type="text" asp-for="CategoryName" />
+    </div>
+    <div>
+        <input type="text" asp-for="Description" />
+    </div>
+    <div>
+        <button class="btn btn-success">Update Category</button>
+    </div>
+</form>

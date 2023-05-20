@@ -1,0 +1,13 @@
+﻿@model Category 
+
+<form method="post" asp-action="CreateCategory">
+    <div>
+        <input type="text" asp-for="CategoryName" placeholder="Write a category name" />
+    </div>
+    <div>
+        <input type="text" asp-for="Description" placeholder="Write description" />
+    </div>
+    <div>
+        <button class="btn btn-primary">Add Category</button>
+    </div>
+</form>
